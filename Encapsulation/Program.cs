@@ -1,6 +1,20 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Encapsulation.Models;
 
+//Secured WeatherReport Details.
+SecureWeatherReporter mySecureWeatherReporter = new SecureWeatherReporter("London", 9);
+var secureWeatherReport = mySecureWeatherReporter.DisplayTheWeatherDetails();
+Console.WriteLine(secureWeatherReport);
+
+SecureWeatherReporter mySecureWeatherReporter1 = new SecureWeatherReporter("California", 25);
+secureWeatherReport = mySecureWeatherReporter1.DisplayTheWeatherDetails();
+Console.WriteLine(secureWeatherReport);
+
+SecureWeatherReporter mySecureWeatherReporter2 = new SecureWeatherReporter("Cape Town", 40);
+secureWeatherReport = mySecureWeatherReporter2.DisplayTheWeatherDetails();
+Console.WriteLine(secureWeatherReport);
+
+/*
 const string MY_ACCOUNT_NUMBER = "ABCDEFG123";
 
 //DODGY BANK ACCOUNT
@@ -55,4 +69,16 @@ Console.WriteLine("Let's make a lot of money right now! Let's change the account
 Console.WriteLine("Oh no :( It looks like we can't do this - it's too secure!");
 //mySecureBankAccount._accountBalance = 1000000;
 mySecureBankAccount.DisplayAccountBalanceDetails();
-Console.WriteLine("😹 Well I guess that's secure!");
+Console.WriteLine("😹 Well I guess that's secure!");*/
+
+/*WeatherReporter myWeatherReporter = new WeatherReporter("London", 35.6);
+var weatherReport = myWeatherReporter.Print();
+Console.WriteLine(weatherReport);
+
+WeatherReporter myWeatherReporter1 = new WeatherReporter("California", 35.6);
+var weatherReport1 = myWeatherReporter1.Print();
+Console.WriteLine(weatherReport1);
+WeatherReporter myWeatherReporter2 = new WeatherReporter("Cape Town", 35.6);
+var weatherReport2 = myWeatherReporter2.Print();
+Console.WriteLine(weatherReport2);*/
+
